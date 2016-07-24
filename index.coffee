@@ -1,7 +1,7 @@
 module.exports =
 	activate: ->
 
-		fromGrammarName: 'GitHub Markdown'
+		fromGrammarName: "GitHub Markdown"
 		fromScopeName: 'source.gfm'
 		toScopeName: 'text.html.basic'
 
