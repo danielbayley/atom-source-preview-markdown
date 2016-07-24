@@ -1,0 +1,45 @@
+{
+  "name": "source-preview-markdown",
+  "version": "0.0.0",
+  "description": "source-preview provider for Markdown.",
+  "keywords": [
+    "markdown",
+    "gfm",
+    "preview",
+    "source",
+    "html"
+  ],
+  "homepage": "https://atom.io/packages/source-preview-markdown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbayley/atom-source-preview-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbayley/atom-source-preview-markdown/issues"
+  },
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "github-markdown-render": "^2.1.0"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "activationHooks": [
+    "language-gfm:grammar-used",
+    "language-markdown:grammar-used"
+  ],
+  "activationCommands": [
+    {
+      "atom-text-editor:not(.mini)": "source-preview:toggle"
+    }
+  ],
+  "providedServices": {
+    "preview.provider": {
+      "versions": {
+        "0.1.0": "activate"
+      }
+    }
+  }
+}
